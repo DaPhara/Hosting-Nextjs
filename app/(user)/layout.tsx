@@ -11,10 +11,17 @@ export const metadata: Metadata = {
   description: "We will provide the best best service to all of you gay gay.",
 
   openGraph: {
-    title: "Orbit Organization right here",
-    description: "The solution company provide alot of services to you.",
-    images:
-      "https://sketchok.com/images/articles/06-anime/002-one-piece/26/16m.jpg",
+    title: "Orbit Organization",
+    description: "The solution company providing a wide range of services.",
+    images: [
+      {
+        url: "https://sketchok.com/images/articles/06-anime/002-one-piece/26/16m.jpg",
+        width: 1200, // Replace with actual image width
+        height: 630, // Replace with actual image height
+        alt: "Orbit Organization Thumbnail",
+      },
+    ],
+    type: "website",
   },
 };
 export default function RootLayout({
