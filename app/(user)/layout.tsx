@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     title: "Orbit Organization right here",
     description: "The solution company provide alot of services to you.",
     images:
-      "https://merchant.orbit-dev.net/storage/app/public/product/2025-03-07-67ca56591899f.png",
+      "https://sketchok.com/images/articles/06-anime/002-one-piece/26/16m.jpg",
   },
 };
 export default function RootLayout({

@@ -15,11 +15,11 @@ export default function TextNavComponent() {
   // console.log("This Path:", pathname);
   return (
     <Navbar fluid rounded>
-      <NavbarBrand href="https://flowbite-react.com">
+      <NavbarBrand href="https://sketchok.com/images/articles/06-anime/002-one-piece/26/16m.jpg">
         <img
-          src="/Vercel.svg"
+          src="https://sketchok.com/images/articles/06-anime/002-one-piece/26/16m.jpg"
           className="mr-3 h-6 sm:h-9"
-          alt="Flowbite React Logo"
+          alt="luffy"
         />
         <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white">
           Flowbite React
