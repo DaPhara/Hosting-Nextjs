@@ -1,0 +1,13 @@
+@import "tailwindcss";
+@plugin "flowbite-react/plugin/tailwindcss";
+@source "../.flowbite-react/class-list.json";
+/* body {
+  font-family: var(--font-inter), var(--font-suwannaphum);
+} */
+body {
+  font-family: var(--font-inter), var(--font-suwannaphum) !important;
+}
+
+h1 {
+  font-family: var(--font-osaka-re);
+}
