@@ -20,8 +20,8 @@ export default function page() {
       <div className="h-screen flex flex-wrap justify-center gap-3 ">
         {product.map((product: any, index) => (
           <ProductCardComponent
-            onClick={() => router.push(`/enroll/${product.id}`)}
             key={index}
+            onClick={() => router.push(`/enroll/${product.id}`)}
             title={product?.title || "No title"}
             image={product?.image || "No Image"}
             price={product?.price || "No price"}

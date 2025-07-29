@@ -1,30 +1,33 @@
-import React, { Suspense } from "react";
+"use client";
+import React, { Suspense, useState } from "react";
 import "@/app/globals.css";
 import SideBarComponents from "@/components/sidebar/SideBarComponents";
-import type { Metadata } from "next";
-export const metadata: Metadata = {
-  title: "Orbit Organization",
-  description: "We will provide the best best service to all of you gay gay.",
+import { MenuIcon } from "@/components/icons/FontAwsome";
 
-  openGraph: {
-    title: "Orbit Organization right here",
-    description: "The solution company provide alot of services to you.",
-    images:
-      "https://sketchok.com/images/articles/06-anime/002-one-piece/26/16m.jpg",
-  },
-};
 export default function AdminLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const [isShowSideBar, setIsShowSideBar] = useState<boolean>(false);
+  console.log(isShowSideBar);
   return (
     <html lang="en">
-      <body>
-        <aside className="fixed h-screen ">
+      <body className="flex none-scroll-bar">
+        <MenuIcon
+          onClick={() => {
+            setIsShowSideBar(!isShowSideBar);
+          }}
+          classname="w-8 h-8 fixed bottom-0 z-10 m-14 cursor-pointer lg:hidden"
+        />
+        <aside
+          className={`sticky left-0 z-10 h-screen ${
+            isShowSideBar && "hidden"
+          } lg:block`}
+        >
           <SideBarComponents />
         </aside>
-        <main className="">
+        <main className="flex-1">
           <Suspense fallback>{children}</Suspense>
         </main>
       </body>

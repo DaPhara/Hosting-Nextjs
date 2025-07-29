@@ -11,3 +11,6 @@ body {
 h1 {
   font-family: var(--font-osaka-re);
 }
+.none-scroll-bar::-webkit-scrollbar {
+  display: none;
+}

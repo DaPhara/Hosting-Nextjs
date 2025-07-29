@@ -33,7 +33,7 @@ export default function TextNavComponent() {
         <NavbarLink as={Link} href="/" active={pathname == "/"}>
           Home
         </NavbarLink>
-        <NavbarLink as={Link} href="/enroll" active={pathname == "/about"}>
+        <NavbarLink as={Link} href="/checkme" active={pathname == "/checkme"}>
           About
         </NavbarLink>
         <NavbarLink as={Link} href="/enroll" active={pathname == "/enroll"}>

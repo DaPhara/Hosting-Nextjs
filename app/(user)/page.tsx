@@ -14,7 +14,7 @@ export default function Home() {
           className=" text-white bg-purple-700 font-bold text-2xl border rounded-full p-8"
           onClick={() => router.push("/about", { scroll: false })}
         >
-          This is TNT
+          Click Me to Dashboard
         </button>
       </div>
     </>
